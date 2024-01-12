@@ -46,6 +46,3 @@ def show_blog():
             return redirect(selected_blog_link)
 
     return "Invalid request"
-
-if __name__ == '__main__':
-    app.run(debug=True)
