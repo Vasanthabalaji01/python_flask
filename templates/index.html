@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>BlogShower App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mr.Cloudexplorer</h1>
+        <img src="{{ url_for('static', filename='images/Mr.Cloudexplorer_logo.png') }}" alt="Mr.Cloudexplorer Logo" id="logo">
+        <h2>Click Me!</h2>
+        <form action="{{ url_for('show_blog') }}" method="post" id="blogForm">
+            <input type="hidden" name="image_clicked" value="Mr.Cloudexplorer_logo.png">
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
